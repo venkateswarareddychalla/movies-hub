@@ -15,6 +15,11 @@ const Nav = () => {
     navigate('/login')
   }
 
+  // Dev-only API base banner
+  const API_BASE = import.meta.env.VITE_API_BASE || 'https://movies-hub-backend.onrender.com'
+  let apiHost = ''
+  try { apiHost = new URL(API_BASE).host } catch { apiHost = API_BASE }
+
   return (
     <header className="bg-white border-b">
       <div className="max-w-5xl mx-auto px-4 py-3 flex items-center justify-between">
@@ -33,9 +38,14 @@ const Nav = () => {
             </>
           ) : (
             <>
-              <NavLink to="/login" className={`${base} ${inactive}`}>Login</NavLink>
-              <NavLink to="/register" className={`${base} ${inactive}`}>Register</NavLink>
+              <Link to="/login" className={`${base} ${inactive}`}>Login</Link>
+              <Link to="/register" className={`${base} ${inactive}`}>Register</Link>
             </>
+          )}
+          {import.meta.env.DEV && (
+            <span className="hidden sm:inline text-xs px-2 py-1 rounded-full bg-gray-100 text-gray-700" title={API_BASE}>
+              API: {apiHost || API_BASE}
+            </span>
           )}
         </div>
       </div>
