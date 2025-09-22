@@ -4,9 +4,7 @@
   "description": "Backend for MovieHub - A movie recommendation board",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "server": "nodemon server.js"
   },
   "keywords": ["movie", "recommendation", "voting", "discussion"],
   "author": "Venkateswara Reddy Challa",
