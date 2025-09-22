@@ -1,5 +1,14 @@
 # MovieHub
 
+## Live Demo
+- **Frontend (User Interface)**: [https://movies-hub-frontend.onrender.com](https://movies-hub-frontend.onrender.com)
+- **Backend (API)**: [https://movies-hub-backend.onrender.com](https://movies-hub-backend.onrender.com)
+- **Admin Panel**: [https://movies-hub-admin.onrender.com](https://movies-hub-admin.onrender.com)
+
+---
+
+## MovieHub
+
 A full‑stack Movie Recommendation Board where users can suggest films, vote (+1/−1), and discuss picks. Admins can moderate content. Built with React (Vite) + Tailwind classes only, and Node.js + Express + SQLite.
 
 ## Tech Stack
